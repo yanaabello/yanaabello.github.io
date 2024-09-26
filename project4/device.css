@@ -130,15 +130,61 @@ ul {
   margin: 0;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
+    padding: 20px;
   }
 
   .specification {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+  }
+
+  .features-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    width: auto;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .left-content h1,
+  .left-content h2,
+  .features li {
+    margin: 0 10px;
+  }
+
+  .processor-title,
+  .storage-title,
+  .charging-title,
+  .camera-title,
+  .display-title,
+  .size-weight-title,
+  .processor-details,
+  .storage-details,
+  .charging-details,
+  .camera-details,
+  .display-details,
+  .size-weight-details {
+    width: 100%;
+  }
+
+  h4, h5 {
+    font-size: 16px;
+  }
+
+  .features li {
+    font-size: 18px;
   }
 }
