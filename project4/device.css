@@ -55,9 +55,9 @@ body {
 }
 
 .right-content img {
-  width: 600px; /* Fixed width for desktop */
-  max-width: 80%; /* Adjust to keep it from being full width on mobile */
-  height: auto; /* Maintain aspect ratio */
+  width: 600px;
+  max-width: 80%;
+  height: auto;
 }
 
 .features-boxes {
@@ -193,6 +193,18 @@ ul {
   .display-details,
   .size-weight-details {
     width: 100%;
+    text-align: center; 
+  }
+
+  .processor-details,
+  .storage-details,
+  .charging-details,
+  .camera-details,
+  .display-details,
+  .size-weight-details {
+    padding-left: 0; /* Remove any left padding */
+    padding-right: 0; /* Remove any right padding */
+    text-align: center; /* Ensure details are centered */
   }
 
   h4, h5 {
