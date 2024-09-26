@@ -1,105 +1,144 @@
 body {
-    background-color: #001D3D;
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
 }
 
 .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.left-content {
+  text-align: center;
+}
+
+.left-content h1 {
+  font-size: 70px;
+  margin: 0;
+  color: #000;
+}
+
+.left-content h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  font-size: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features li i {
+  font-size: 22px;
+  margin-right: 10px;
+  color: #000;
+}
+
+.right-content img {
+  max-width: 600px;
+}
+
+.features-boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.box {
+  border: 2px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  font-size: 16px;
+  width: 250px;
+  margin: 0 auto; 
+}
+
+.box:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.box p {
+  font-size: 14px;
+  color: #666;
+}
+
+.specification {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 70%;
+  margin: 30px auto;
+  font-size: 20px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.processor-title, .storage-title, .charging-title, .camera-title, .display-title, .size-weight-title {
+  width: 50%;
+}
+
+.processor-details, .storage-details, .charging-details, .camera-details, .display-details, .size-weight-details {
+  width: 50%;
+  text-align: left;
+}
+
+h4 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+h5 {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .specification {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    max-width: 600px;
-    padding: 20px;
-}
-
-h1 {
-    font-size: 48px;
-    margin-bottom: 16px;
-    animation: fadeInDown 1s ease-out;
-}
-
-p {
-    margin-bottom: 32px; /* Reduced margin for less spacing below the paragraph */
-    font-size: 19px;
-    animation: fadeInDown 1.5s ease-out;
-}
-
-h2 {
-    margin-top: 32px; /* Reduced top margin above the "Projects" heading */
-    margin-bottom: 24px; /* Reduced bottom margin to move the button closer */
-    font-size: 32px;
-    font-weight: bold;
-    color: #CCA000;
-}
-
-.btn-custom {
-    background-color: #CCA000;
-    color: #fff;
-    padding: 12px 30px;
-    font-size: 16px;
-    border-radius: 50px;
-    border: none;
-    transition: all 0.3s ease-in-out;
-    margin: 8px; /* Reduced margin for less space around the button */
-}
-
-.btn-custom:hover {
-    background-color: #127ADC;
-    transform: translateY(-5px);
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 16px; /* Reduced gap between buttons */
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #127ADC;
-    width: 80%;
-    margin: 32px auto; /* Reduced margin for less space around the hr */
-    animation: fadeInDown 2s ease-out;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.top-right-nav {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 16px;
-}
-
-.top-right-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    margin-left: 32px;
-    transition: color 0.3s ease;
-}
-
-.top-right-nav a:hover {
-    color: #CCA000;
-}
-
-.bottom-left-text {
-    position: absolute;
-    bottom: 20px;
-    left: 30px;
-    font-size: 12px;
-    color: #CCA000;
+  }
 }
