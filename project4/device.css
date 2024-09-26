@@ -1,141 +1,3 @@
-/* General body styling */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
-  text-align: center;
-}
-
-/* Main container for text and image */
-.container {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 40px;
-}
-
-/* Left content styling */
-.left-content {
-  text-align: center;
-}
-
-.left-content h1 {
-  font-size: 70px;
-  margin: 0;
-  color: #000;
-}
-
-.left-content h2 {
-  font-size: 30px;
-  margin: 10px 0;
-  color: #444;
-}
-
-/* Feature list */
-.features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features li {
-  font-size: 20px;
-  margin: 10px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.features li i {
-  font-size: 22px;
-  margin-right: 10px;
-  color: #000;
-}
-
-/* Right content */
-.right-content img {
-  max-width: 600px;
-}
-
-/* Feature boxes */
-.features-boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  width: 70%;
-  margin: 0 auto;
-}
-
-.box {
-  border: 2px solid #ddd;
-  padding: 15px;
-  background-color: #f9f9f9;
-  text-align: center;
-  transition: box-shadow 0.3s ease;
-  font-size: 16px;
-  width: 250px;
-  margin: 0 auto; 
-}
-
-.box:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.box h3 {
-  font-size: 20px;
-  margin: 0 0 5px;
-  color: #333;
-}
-
-.box p {
-  font-size: 14px;
-  color: #666;
-}
-
-/* Specification Section */
-.specification {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 70%;
-  margin: 30px auto;
-  font-size: 20px;
-  color: #333;
-  border-bottom: 1px solid #ddd; /* Add line between sections */
-  padding-bottom: 20px; /* Space below the border */
-}
-
-.processor-title, .storage-title, .charging-title, .camera-title, .display-title, .size-weight-title {
-  width: 50%; /* Ensure both title and details take equal space */
-}
-
-.processor-details, .storage-details, .charging-details, .camera-details, .display-details, .size-weight-details {
-  width: 50%; /* Ensure both title and details take equal space */
-  text-align: left; /* Align text to left */
-}
-
-h4 {
-  font-size: 18px; /* Font size for h4 headings */
-  margin: 10px 0 5px; /* Space between headings */
-}
-
-h5 {
-  font-size: 16px; /* Font size for h5 headings */
-  margin: 5px 0; /* Space between subheadings */
-}
-
-ul {
-  list-style-type: none; /* Remove bullet points */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -193,17 +55,17 @@ body {
 }
 
 .right-content img {
-    width: 600px;
-    max-width: 80%;
-    height: auto;
+  width: 600px; /* Fixed width for desktop */
+  max-width: 80%; /* Adjust to keep it from being full width on mobile */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .features-boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  width: 70%;
-  margin: 0 auto;
+  width: 100%; 
+  margin: 0 auto; 
 }
 
 .box {
@@ -213,8 +75,8 @@ body {
   text-align: center;
   transition: box-shadow 0.3s ease;
   font-size: 16px;
-  width: 100%;
-  max-width: 250px;
+  width: 100%; 
+  max-width: 250px; 
   margin: 0 auto; 
 }
 
@@ -241,7 +103,7 @@ body {
   margin: 30px auto;
   font-size: 20px;
   color: #333;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; 
   padding-bottom: 20px;
 }
 
@@ -341,5 +203,3 @@ ul {
     font-size: 18px;
   }
 }
-
-
