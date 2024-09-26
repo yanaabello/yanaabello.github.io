@@ -64,7 +64,6 @@ body {
   gap: 15px;
   width: 70%;
   margin: 0 auto;
-  margin-bottom: 50px;
 }
 
 .box {
@@ -74,7 +73,8 @@ body {
   text-align: center;
   transition: box-shadow 0.3s ease;
   font-size: 16px;
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
   margin: 0 auto; 
 }
 
@@ -105,11 +105,21 @@ body {
   padding-bottom: 20px;
 }
 
-.processor-title, .storage-title, .charging-title, .camera-title, .display-title, .size-weight-title {
+.processor-title,
+.storage-title,
+.charging-title,
+.camera-title,
+.display-title,
+.size-weight-title {
   width: 50%;
 }
 
-.processor-details, .storage-details, .charging-details, .camera-details, .display-details, .size-weight-details {
+.processor-details,
+.storage-details,
+.charging-details,
+.camera-details,
+.display-details,
+.size-weight-details {
   width: 50%;
   text-align: left;
 }
@@ -144,11 +154,13 @@ ul {
   }
 
   .features-boxes {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
   .box {
-    width: auto;
+    width: 100%;
+    margin: 10px 0;
   }
 
   h1 {
