@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Paradise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="resources/flower icon.ico" rel="icon" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body id="body" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Floral Paradise</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cardContainer">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn nav-link" onclick="changeMode()">Mode</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="video-background">
+            <video class="w-100" autoplay muted loop disablePictureInPicture>
+                <source src="resources/bg video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="content text-center py-4">
+            <h1 class="display-1">Floral Paradise</h1>
+            <p class="lead">Explore the beauty of Philippine flowers!</p>
+        </div>
+    </div>
+
+    <div class="description-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="resources/jasmine.jpg" alt="Philippine Flowers" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mt-4 mt-sm-5">Welcome to Floral Paradise</h2>
+                    <p class="description-paragraph">
+                        Your gateway to the stunning world of Philippine flowers. Discover an enchanting collection that
+                        showcases the rich diversity of blooms found across the archipelago, from the vibrant hibiscus
+                        to the enchanting anthurium. Each flower is a testament to the Philippines' lush landscapes and
+                        vibrant ecosystems, reflecting the country's natural beauty and cultural significance. Join us
+                        on this floral journey and immerse yourself in the captivating colors and fragrances that make
+                        the Philippines a true sanctuary for nature enthusiasts and flower lovers alike.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Gallery Section -->
+    <div class="container my-5">
+        <h2 class="text-center gallery-heading">Gallery</h2>
+        <div class="row" id="cardContainer">
+            <!-- Gallery cards will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        var names = ["Gumamela", "Peace Lily", "Butterfly pea", "Sampaguita", "Crepe Ginger", "Peacock", "African Marigold", "Santan", "Chinese Violet", "False shamrock", "Common Lantana", "Mexican Petunia", "Sulfur Cosmos", "Desert Rose", "Waling-Waling", "Ylang Ylang"];
+        var pics = ["resources/Gumamela.png", "resources/Peace lily.jpg", "resources/Butterfly pea.png", "resources/Sampaguita.png", "resources/Crepe ginger.jpg", "resources/Peacock.jpg", "resources/African marigold.jpg", "resources/Santan.jpg", "resources/Chinese violet.jpg", "resources/False shamrock.jpg", "resources/Common lantana.jpg", "resources/Mexican petunia.jpg", "resources/Sulfur cosmos.jpg", "resources/Desert rose.jpg", "resources/Waling waling.jpg", "resources/Ylang ylang.jpg"];
+        var descriptions = [
+            "A vibrant and tropical flower, the gumamela, or hibiscus, is known for its large, trumpet-shaped blooms and bright colors ranging from red and pink to yellow and white. It thrives in warm climates and is commonly found in gardens and as ornamental plants. ",
+            "The peace lily is a graceful, tropical plant admired for its lush green leaves and elegant white flowers that resemble calla lilies. Known for its air-purifying qualities, the peace lily is a popular houseplant, thriving in low light and adding a touch of tranquility to indoor spaces.",
+            "The butterfly pea is a captivating vine known for its vivid blue or purple, butterfly-shaped flowers. This flower is admired not only for its striking color but also for its various uses. Its delicate beauty and versatile nature make it a cherished plant in many gardens and kitchens alike.",
+            "The sampaguita is a small, fragrant white flower cherished for its sweet, captivating scent. As the national flower of the Philippines, it holds deep cultural significance, symbolizing purity, simplicity, and humility. Sampaguita blooms are often strung into garlands and used in religious ceremonies, as offerings, or as adornments in traditional festivities.",
+            "Crepe ginger is an eye-catching tropical plant recognized for its striking red cones and delicate white flowers that resemble crepe paper, giving the plant its name. The plant’s tall, spiral-shaped stems and lush green leaves make it a popular ornamental choice for gardens. Its flowers bloom from vibrant red bracts, producing an intricate, showy display.",
+            "The peacock flower is a vibrant, ornamental plant known for its striking red, orange, and yellow blossoms that resemble the showy feathers of a peacock. This hardy shrub features delicate, fern-like leaves and clusters of colorful, eye-catching blooms. Often found in gardens, the peacock flower adds a splash of color and exotic beauty to landscapes.",
+            "The African marigold is a bold and beautiful flower known for its large, pom-pom-like blooms in vibrant shades of yellow, orange, and gold. The African marigold’s strong, upright stems and full, rounded flowers make it a striking addition to garden borders, flower beds, and landscaping.",
+            "Santan is a popular tropical shrub known for its dense clusters of small, star-shaped flowers that bloom in vibrant hues of red, pink, orange, and yellow. The santan is a common sight in gardens across the Philippines, admired for its bright colors and lush green foliage. The flowers attract pollinators like butterflies and bees, making it a lively addition to any garden.",
+            "The Chinese violet is a delicate, fast-growing vine known for its attractive purple, lavender, or white trumpet-shaped flowers. This plant is often used as ground cover due to its ability to spread quickly and thrive in a variety of environments. The Chinese violet’s blossoms feature a soft gradient of colors with darker purple centers, adding beauty and elegance to gardens.",
+            "The False shamrock is a striking plant known for its vibrant, triangular, purple leaves that resemble the shape of a shamrock. This ornamental plant adds a unique touch to both indoor and outdoor gardens with its bold, clover-like foliage. The leaves are sensitive to light, opening during the day and closing at night, adding a dynamic, lively element to its appearance.",
+            "Common lantana is a widely recognized and vibrant flowering plant celebrated for its clusters of small, colorful blooms that can be found in various shades, including yellow, orange, pink, and purple. This hardy shrub thrives in the tropical climate, making it a popular choice for gardens, landscapes, and along roadways.",
+            "Mexican petunia is a popular ornamental plant in the Philippines, celebrated for its lush green foliage and striking purple or blue trumpet-shaped flowers. This perennial plant often found in gardens, landscapes, and along roadsides. Its vibrant blooms attract pollinators, such as butterflies and bees, making it a valuable addition to any garden.",
+            "Sulfur cosmos is a cheerful flowering plant commonly found in gardens and landscapes across the Philippines. Recognized for its bright yellow to orange blooms, this annual plant thrives in the tropical climate, bringing a burst of color to gardens from spring through fall.",
+            "The desert rose, known as kalachuchi is a stunning succulent shrub that thrives in the warm, tropical climate of the Philippines. Characterized by its thick, swollen trunk and striking, trumpet-shaped flowers that bloom in vibrant shades of pink, red, and white, this plant is a popular choice among gardeners and landscapers. The desert rose is highly valued for its unique appearance and resilience, able to withstand drought conditions due to its water-storing capabilities.",
+            "Waling-waling is one of the most iconic and revered orchids in the Philippines. Celebrated for its stunning large flowers, which come in shades of purple, pink, and yellow, this orchid is often referred to as the queen of orchids. Native to the tropical forests of Mindanao, waling-waling thrives in humid environments and is typically found growing on trees in its natural habitat.",
+            "Ylang-ylang, known locally as ilang-ilang, is a fragrant tropical tree native to the Philippines and other parts of Southeast Asia. Recognized for its stunning, star-shaped yellow flowers, ylang-ylang is cherished for its sweet, exotic scent, which is often used in perfumes and essential oils. The flowers bloom in clusters and emit a captivating aroma, especially in the evening, attracting various pollinators, including bees and moths."
+        ];
+
+        // This loop creates and appends cards to the cardContainer element
+        for (var i = 0; i < names.length; i++) {
+            var myContainer = document.getElementById("cardContainer");
+            myContainer.innerHTML += `
+    <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+        <div class="card my-3" id="c${i}" onmouseenter="addShadow('c${i}')" onmouseleave="removeShadow('c${i}')">
+            <div class="imgcontainer">
+                <a href="${pics[i]}" data-lightbox="gallery" data-title="${names[i]}"><img src="${pics[i]}" class="card-img-top"></a>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">${names[i]}</h5>
+                <button class="btn btn-primary" onclick="toggleCard('c${i}')">Show Description</button>
+                <div class="collapse" id="collapse${i}">
+                    <div class="card card-body mt-2">
+                        ${descriptions[i]}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`;
+        }
+
+        function addShadow(id) {
+            document.getElementById(id).classList.add("shadow");
+        }
+        function removeShadow(id) {
+            document.getElementById(id).classList.remove("shadow");
+        }
+
+        function toggleCard(id) {
+            var collapseElement = document.getElementById('collapse' + id.slice(1));
+            var buttonElement = document.querySelector(`#${id} .btn`);
+
+            var isExpanded = collapseElement.classList.contains('show');
+            if (isExpanded) {
+                collapseElement.classList.remove('show');
+                buttonElement.textContent = "Show Description";
+            } else {
+                collapseElement.classList.add('show');
+                buttonElement.textContent = "Hide Description";
+            }
+        }
+
+        var colorMode = "light";
+        function changeMode() {
+            var body = document.getElementById("body");
+            var navbar = document.querySelector('.navbar');
+
+            if (body.getAttribute("data-bs-theme") == "light") {
+                body.setAttribute("data-bs-theme", "dark");
+                body.classList.add("bg-dark", "text-light");
+                body.classList.remove("bg-light", "text-dark");
+                navbar.classList.add("bg-dark");
+            } else {
+                body.setAttribute("data-bs-theme", "light");
+                body.classList.add("bg-light", "text-dark");
+                body.classList.remove("bg-dark", "text-light");
+                navbar.classList.remove("bg-dark");
+            }
+        }
+
+    </script>
+</body>
+</html>
