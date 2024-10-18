@@ -93,7 +93,6 @@ p.lead {
     line-height: 1.6;
 }
 
-/* Image styling */
 .description-section img {
     max-width: 100%;
     height: auto;
@@ -106,6 +105,29 @@ p.lead {
     color: rgb(224, 161, 161);
 }
 
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    color: white !important;
+}
+
+.carousel-title {
+    font-family: "Noto Serif", serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.farm-title {
+    font-family: 'Ultra';
+    color: rgb(114, 114, 114);
+    margin-bottom: 20px;
+}
+
+.farm-paragraph {
+    font-family: 'Acme', sans-serif;
+    color: rgb(114, 114, 114);
+    font-size: 18px;
+}
 #cardContainer {
     margin-top: 30px;
 }
@@ -126,13 +148,40 @@ p.lead {
 
 .card-img-top {
     cursor: pointer;
-    transition: transform 0.2s;
+    transition: filter 0.3s ease;
+}
+
+.card-title-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .card-title-overlay {
+    opacity: 1;
 }
 
 .card-img-top:hover {
     transform: scale(1.05);
 }
 
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
 
 .btn-primary {
     background-color: #FFA2B9;
