@@ -1,0 +1,86 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #272b33;
+}
+
+.nav-buttons {
+    margin-right: 25px;
+}
+
+.container-fluid,
+.image {
+    margin: 0;
+    padding: 0;
+}
+
+.content .row {
+    margin: 0;
+}
+
+.image {
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+
+.gif {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.description {
+    color: white;
+    padding: 20px;
+}
+
+.btn {
+    margin-top: 10px;
+    font-size: 16px;
+    background-color: #c13406;
+    border: none;
+}
+
+.character-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.planets-image {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.uniform-image {
+    width: 100%;
+    height: 250px;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.card {
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
