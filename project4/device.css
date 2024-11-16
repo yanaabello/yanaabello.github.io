@@ -3,12 +3,8 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100vh;
   text-align: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -18,29 +14,31 @@ body {
   margin-bottom: 40px;
 }
 
-.left-content {
-  text-align: center;
+.container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.left-content h1 {
+.container h1 {
   font-size: 70px;
   margin: 0;
   color: #000;
 }
 
-.left-content h2 {
+.container h2 {
   font-size: 30px;
   margin: 10px 0;
   color: #444;
 }
 
-.features {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.features li {
+ul li {
   font-size: 20px;
   margin: 10px 0;
   display: flex;
@@ -48,170 +46,128 @@ body {
   justify-content: center;
 }
 
-.features li i {
+ul li i {
   font-size: 22px;
   margin-right: 10px;
   color: #000;
 }
 
-.right-content img {
-  width: 600px;
+.container img {
+  width: 100%;
   max-width: 80%;
   height: auto;
 }
 
-.features-boxes {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.row-cols-1 .row-cols-md-3 {
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
-  width: 70%; 
-  margin: 0 auto; 
 }
 
-.box {
+.card {
   border: 2px solid #ddd;
   padding: 15px;
   background-color: #f9f9f9;
   text-align: center;
   transition: box-shadow 0.3s ease;
   font-size: 16px;
-  width: 100%; 
-  max-width: 250px; 
-  margin: 0 auto; 
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
-.box:hover {
+.card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.box h3 {
+.card h3 {
   font-size: 20px;
   margin: 0 0 5px;
   color: #333;
 }
 
-.box p {
+.card p {
   font-size: 14px;
   color: #666;
 }
 
+.specification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
 .specification {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 70%;
-  margin: 30px auto;
-  font-size: 20px;
-  color: #333;
-  border-bottom: 1px solid #ddd; 
-  padding-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
 }
 
-.processor-title,
-.storage-title,
-.charging-title,
-.camera-title,
-.display-title,
-.size-weight-title {
-  width: 50%;
+.specification .left,
+.specification .right {
+  flex: 1;
+  padding-left: 20px;
 }
 
-.processor-details,
-.storage-details,
-.charging-details,
-.camera-details,
-.display-details,
-.size-weight-details {
-  width: 50%;
-  text-align: left;
+.specification h3 {
+  font-size: 22px;
+  font-weight: bold;
 }
 
-h4 {
-  font-size: 18px;
-  margin: 10px 0 5px;
+.specification h4 {
+  font-size: 16px;
+  color: #666;
 }
 
 h5 {
   font-size: 16px;
+  font-weight: bold;
   margin: 5px 0;
 }
 
-ul {
-  list-style-type: none;
+ul li {
+  font-size: 16px;
+}
+
+.specification ul {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
 @media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 20px;
+  .specification-container {
+    padding: 10px;
   }
 
   .specification {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     text-align: center;
-    width: 100%;
   }
 
-  .features-boxes {
-    grid-template-columns: 1fr;
-    width: 100%;
-    justify-items: center; 
-  }
-
-  .box {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  .left-content h1,
-  .left-content h2,
-  .features li {
-    margin: 0 10px;
-  }
-
-  .processor-title,
-  .storage-title,
-  .charging-title,
-  .camera-title,
-  .display-title,
-  .size-weight-title,
-  .processor-details,
-  .storage-details,
-  .charging-details,
-  .camera-details,
-  .display-details,
-  .size-weight-details {
-    width: 100%;
-    text-align: center; 
-  }
-
-  .processor-details,
-  .storage-details,
-  .charging-details,
-  .camera-details,
-  .display-details,
-  .size-weight-details {
+  .specification .left,
+  .specification .right {
+    flex: none;
+    margin-left: 0;
     padding-left: 0;
-    padding-right: 0;
-    text-align: center;
   }
 
-  h4, h5 {
-    font-size: 16px;
-  }
-
-  .features li {
+  .specification h3,
+  .specification h4 {
     font-size: 18px;
+  }
+
+  .specification ul {
+    text-align: center;
   }
 }
