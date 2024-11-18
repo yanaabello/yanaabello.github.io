@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral Paradise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Ultra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="resources/flower icon.ico" rel="icon" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body id="body" data-bs-theme="light">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Floral Paradise</a>
+            <img id="mode-icon" src="resources/Dark mode.png" alt="Mode Icon" class="mode-icon me-2"
+                style="width: 30px; height: 30px; cursor: pointer;" onclick="changeMode()">
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="video-background">
+            <video class="w-100" autoplay muted loop disablePictureInPicture>
+                <source src="resources/bg video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="content text-center py-4">
+            <h1 class="display-1">Floral Paradise</h1>
+            <p class="lead">Explore the beauty of Philippine flowers!</p>
+        </div>
+    </div>
+
+    <div class="description-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="resources/jasmine.jpg" alt="Philippine Flowers" class="img-fluid rounded">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mt-4 mt-sm-5">Welcome to Floral Paradise</h2>
+                    <p class="description-paragraph">
+                        Your gateway to the stunning world of Philippine flowers. Discover an enchanting collection that
+                        showcases the rich diversity of blooms found across the archipelago, from the vibrant hibiscus
+                        to the enchanting anthurium. Each flower is a testament to the Philippines' lush landscapes and
+                        vibrant ecosystems, reflecting the country's natural beauty and cultural significance. Join us
+                        on this floral journey and immerse yourself in the captivating colors and fragrances that make
+                        the Philippines a true sanctuary for nature enthusiasts and flower lovers alike.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container my-5">
+        <h2 class="text-center gallery-heading">Gallery</h2>
+
+        <div class="row align-items-center my-5">
+            <div class="col-lg-6">
+                <div id="flowerCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active position-relative">
+                            <img src="resources/Buwakan Farm.jpg" class="d-block w-100" alt="Buwakan Farm">
+                            <div class="carousel-caption d-block carousel-title">
+                                <h5>Buwakan ni Alejanda (Cebu)</h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item position-relative">
+                            <img src="resources/Sunshine Farm.jpg" class="d-block w-100" alt="Sunshine Farm">
+                            <div class="carousel-caption d-block carousel-title">
+                                <h5>Sunshine Farm (Quezon)</h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item position-relative">
+                            <img src="resources/Benguet Farm.jpg" class="d-block w-100" alt="Benguet Farm">
+                            <div class="carousel-caption d-block carousel-title">
+                                <h5>Northern Blossom Flower Farm (Benguet)</h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item position-relative">
+                            <img src="resources/Farmer's Love Farm.jpg" class="d-block w-100" alt="Farmer's Love Farm">
+                            <div class="carousel-caption d-block carousel-title">
+                                <h5>Farmer’s Love Agri Farm (Tarlac)</h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item position-relative">
+                            <img src="resources/Mariano's Farm.jpg" class="d-block w-100" alt="Mariano's Farm">
+                            <div class="carousel-caption d-block carousel-title">
+                                <h5>Mariano’s Blooming Agri-Tourism Park (South Cotabato)</h5>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item position-relative">
+                            <img src="resources/Sirao Farm.jpg" class="d-block w-100" alt="Sirao Farm">
+                            <div class="carousel-caption d-block carousel-title">
+                                <h5>Sirao Flower Farm (Cebu)</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#flowerCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#flowerCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h3 class="mt-4 mt-lg-0 farm-title">Philippine Flower Farms</h3>
+                <p class="farm-paragraph">
+                    Discover the stunning beauty of the Philippines through its vibrant flower farms. These enchanting
+                    landscapes are filled with a diverse array of blooms, from exotic orchids to colorful bougainvilleas
+                    and traditional sampaguitas. Each farm offers a unique experience, allowing visitors to immerse
+                    themselves in the fragrant gardens, learn about local flower cultivation techniques, and appreciate
+                    the artistry of floral arrangements. Whether you're a flower enthusiast or simply seeking a
+                    picturesque escape, these farms celebrate the natural beauty and rich biodiversity of the
+                    Philippines.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button id="toggleButton" class="btn btn-primary my-3" onclick="toggleCards()">Show Flowers</button>
+    </div>
+
+    <div class="collapse" id="cardContainer">
+        <div class="row" id="cardRow">
+            <!-- Gallery cards will be inserted here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+    <script>
+        var names = ["Gumamela", "Peace Lily", "Butterfly pea", "Sampaguita", "Crepe Ginger", "Peacock", "African Marigold", "Santan", "Chinese Violet", "False shamrock", "Common Lantana", "Mexican Petunia", "Sulfur Cosmos", "Desert Rose", "Waling-Waling", "Ylang Ylang"];
+        var pics = ["resources/Gumamela.png", "resources/Peace lily.jpg", "resources/Butterfly pea.png", "resources/Sampaguita.png", "resources/Crepe ginger.jpg", "resources/Peacock.jpg", "resources/African marigold.jpg", "resources/Santan.jpg", "resources/Chinese violet.jpg", "resources/False shamrock.jpg", "resources/Common lantana.jpg", "resources/Mexican petunia.jpg", "resources/Sulfur cosmos.jpg", "resources/Desert rose.jpg", "resources/Waling waling.jpg", "resources/Ylang ylang.jpg"];
+
+        for (var i = 0; i < names.length; i++) {
+            var myContainer = document.getElementById("cardRow");
+            myContainer.innerHTML += `
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12">
+            <div class="card my-3" id="c${i}" onmouseover="showOverlay('c${i}')" onmouseout="hideOverlay('c${i}')">
+                <div class="imgcontainer">
+                    <a href="${pics[i]}">
+                        <img src="${pics[i]}" class="card-img-top">
+                    </a>
+                    <div class="card-title-overlay">${names[i]}</div>
+                </div>
+            </div>
+        </div>`;
+        }
+
+        function showOverlay(id) {
+            var overlay = document.getElementById(id).querySelector('.card-title-overlay');
+            overlay.style.opacity = "1";
+        }
+
+        function hideOverlay(id) {
+            var overlay = document.getElementById(id).querySelector('.card-title-overlay');
+            overlay.style.opacity = "0";
+        }
+
+
+        function toggleCards() {
+            var cardContainer = document.getElementById("cardContainer");
+            var button = document.getElementById("toggleButton");
+
+            if (cardContainer.classList.contains("show")) {
+                cardContainer.classList.remove("show");
+                button.textContent = "Show Flowers";
+            } else {
+                cardContainer.classList.add("show");
+                button.textContent = "Hide Flowers";
+            }
+        }
+
+        var lightModeIcon = "resources/Light mode.png";
+        var darkModeIcon = "resources/Dark mode.png";
+
+        function changeMode() {
+            var body = document.getElementById("body");
+            var navbar = document.querySelector('.navbar');
+            var modeIcon = document.getElementById("mode-icon");
+
+            if (body.getAttribute("data-bs-theme") == "light") {
+                body.setAttribute("data-bs-theme", "dark");
+                body.classList.add("bg-dark", "text-light");
+                body.classList.remove("bg-light", "text-dark");
+                navbar.classList.add("bg-dark");
+
+                modeIcon.src = lightModeIcon;
+            } else {
+                body.setAttribute("data-bs-theme", "light");
+                body.classList.add("bg-light", "text-dark");
+                body.classList.remove("bg-dark", "text-light");
+                navbar.classList.remove("bg-dark");
+
+                modeIcon.src = darkModeIcon;
+            }
+        }
+
+    </script>
+</body>
+</html>

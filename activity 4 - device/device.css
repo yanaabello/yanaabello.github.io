@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container h1 {
+  font-size: 70px;
+  margin: 0;
+  color: #000;
+}
+
+.container h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #444;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  font-size: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul li i {
+  font-size: 22px;
+  margin-right: 10px;
+  color: #000;
+}
+
+.container img {
+  width: 100%;
+  max-width: 80%;
+  height: auto;
+}
+
+.row-cols-1 .row-cols-md-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.card {
+  border: 2px solid #ddd;
+  padding: 15px;
+  background-color: #f9f9f9;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+  font-size: 16px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.specification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.specification {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.specification .left,
+.specification .right {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.specification h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.specification h4 {
+  font-size: 16px;
+  color: #666;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+ul li {
+  font-size: 16px;
+}
+
+.specification ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .specification-container {
+    padding: 10px;
+  }
+
+  .specification {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .specification .left,
+  .specification .right {
+    flex: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .specification h3,
+  .specification h4 {
+    font-size: 18px;
+  }
+
+  .specification ul {
+    text-align: center;
+  }
+}
