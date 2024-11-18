@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Aurora | Parallax</title>
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="parallax.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="assets/icoAurora.ico" rel="icon" type="image/x-icon">
+
+</head>
+<style>
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f4f4f4;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		border: none;
+		border-radius: 10px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+		transition: transform 0.3s ease-in-out;
+	}
+
+	.card:hover {
+		transform: scale(1.05);
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+	}
+
+	.card-img-top {
+		height: 200px;
+		object-fit: cover;
+	}
+</style>
+
+<body>
+	<section>
+		<div class="keyart" id="parallax">
+			<div class="keyart_layer parallax" id="keyart-0" data-speed="1"></div>
+			<div class="keyart_layer parallax" id="keyart-1" data-speed="70"></div>
+			<div class="keyart_layer parallax" id="keyart-2" data-speed="30"></div>
+			<div class="keyart_layer parallax" id="keyart-3" data-speed="10"></div>
+		</div>
+	</section>
+
+	<section class="main-content">
+		<div class="container">
+			<div class="row" style="padding-bottom: 40px;">
+				<div class="col-12 col-md-6">
+					<img src="assets/auroraGIF.gif" alt="Aurora Borealis GIF" class="img-fluid">
+				</div>
+
+				<div class="col-12 col-md-6 d-flex align-items-center justify-content-center">
+					<div class="text-center">
+						<h1 class="display-4 mb-3"
+							style="font-family: 'Atma', sans-serif; font-weight: bold; padding-top: 20px;">Aurora
+							Borealis</h1>
+						<p style="font-size: 18px; line-height: 1.6;">The Aurora Borealis, also known as the Northern
+							Lights, is a spectacular natural light
+							display predominantly seen in the Arctic and Antarctic regions. The phenomenon occurs when
+							charged particles from the sun collide with the Earth’s magnetic field, producing colorful
+							lights in the sky. These lights can be seen in various colors, ranging from greens and pinks
+							to reds and purples, depending on the type of gas particles involved. The best time to
+							witness the Aurora Borealis is during the winter months, in areas with clear, dark skies and
+							minimal light pollution.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row mt-5">
+				<div class="col-12">
+					<h2 class="text-center"
+						style="font-family: 'Atma', sans-serif; font-weight: bold; font-size: 40px; padding-bottom: 20px;">
+						Types of Northern Lights</h2>
+				</div>
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora1.jpg" class="card-img" alt="Corona">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Curtains
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">In the Arctic, auroral curtains
+								are very common. Stripes of green,
+								purple, or red swirl across the sky. These shapes change rapidly and can quickly morph
+								into other types of aurora.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora2.jpg" class="card-img" alt="Arc">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Arc</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">An arc is a curved, uniform band
+								of auroras that stretches across the sky. It often appears green or pink and can extend
+								from horizon to horizon. Arcs are the most common form of the aurora borealis.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora3.jpg" class="card-img" alt="Pillars">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Pillars
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">During a substorm, they can
+								quickly rise up from the north and drift across the horizon. Usually they are green at
+								the base and topped with red or purple. Though the actual aurora may be far to the
+								north, pillars can be seen from quite a distance because they are hundreds of miles
+								high.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora4.jpg" class="card-img" alt="Rays">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Rays
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">Rays are similar to pillars, but
+								more commonly seen in the Arctic. Because rays may appear directly above you, the
+								perspective is different. Rays can quickly morph into other types of aurora.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora5.jpg" class="card-img" alt="Corona">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Corona
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">Coronas are the most spectacular
+								form of aurora. It appears directly overhead. Rays, pillars, and pulses rise up from
+								every horizon like a flame, converging at the zenith. Coronas are commonly seen in the
+								Arctic. But they are much rarer in lower latitudes, requiring a very intense geomagnetic
+								storm.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora6.jpg" class="card-img" alt="Steve">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Steve
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">STEVE (Strong Thermal Emission
+								Velocity Enhancement) is a rare atmospheric phenomena only recently classified in 2016.
+								Technically it is not an aurora, but always appears alongside it. STEVE takes the form
+								of a narrow arc extending hundreds or thousands of kilometers aligned east to west.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora7.jpg" class="card-img-top" alt="Deep Sky">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Deep Sky
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">A deep sky, or photographic
+								aurora can be easily missed. It’s not visible to the eye, but only picked up by a long
+								exposure on a camera. It happens more often than you would expect when geomagnetic
+								activity is weak.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora8.jpg" class="card-img-top" alt="Stable Auroral Red">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Stable
+								Auroral Red
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">Stable auroral red arcs are
+								another rare type of aurora that may be related to STEVE. But it is much fainter and
+								harder to spot with the naked eye. On November 5, 2023, a strong geomagnetic storm
+								spawned an SAR arc that was photographed as far south as Texas.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora9.jpg" class="card-img-top" alt="Pulsing">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Pulsing
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">Pulsing aurora often occurs after
+								a substorm, as activity is winding down. Patches of auroral light pulse on and off. This
+								is more easily seen in a time lapse than in a still image.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora10.jpg" class="card-img-top" alt="Blue">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Blue
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">Blue auroras may be seen with
+								pillars that reach very high into the atmosphere. They are so high up that they are
+								illuminated by sunlight. Therefore they can only be seen within a few hours of sunset or
+								sunrise.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora11.jpg" class="card-img-top" alt="Nitrogen Fringe">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Nitrogen
+								Fringe
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">In the Arctic, some of the more
+								active aurora swirls may have a red or pink “nitrogen fringe” at the base. These can be
+								very bright, and change rapidly.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-4 mb-4">
+					<div class="card">
+						<img src="assets/aurora12.jpg" class="card-img-top" alt="Spiral">
+						<div class="card-body" style="padding: 20px; background-color: #f4f4f4;">
+							<h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Spiral
+							</h5>
+							<p class="card-text" style="font-size: 16px; color: #666;">Spiral-shaped auroras are a rare
+								and mesmerizing phenomenon where the auroral lights twist and curl into distinct
+								corkscrew-like patterns. These spirals can sometimes resemble a whirlpool or a coiled
+								ribbon</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/parallax.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
