@@ -1,19 +1,45 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Fredoka", sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: transparent !important;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    text-align: center;
+}
+
 .navbar-nav .nav-link {
-    color: white;
+    color: #cdc8c8;
     padding: 10px 20px;
     border: none;
-    margin-right: 10px;
+    margin: 0 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link.active {
+    color:  #f5f0f0;
 }
 
 .navbar-nav .nav-link:hover {
-    color: rgb(255, 193, 193);
+    color:  #f5f0f0;
 }
 
 .navbar-toggler {
@@ -26,10 +52,45 @@ body {
     box-shadow: none;
 }
 
-.GIF {
-    object-fit: cover;
-    max-height: 600px;
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.front-image-container {
+    position: relative;
     width: 100%;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+.front-image {
+    object-fit: cover;
+    max-height: 650px;
+    width: 100%;
+    filter: blur(2px) brightness(20%);
+    position: relative;
+    z-index: -1;
+}
+
+.front-text {
+    font-family: "Dela Gothic One", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.front-text h1 {
+    font-size: 4vw;
+    color: #f5f0f0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.front-text p {
+    font-size: 1.5vw;
+    color: #a7a1a1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .pic {
@@ -39,7 +100,7 @@ body {
 }
 
 .name {
-    font-family: 'Nosifer';
+    font-family: "Fredoka", sans-serif;
     font-weight: bold;
     font-size: 55px;
     text-align: center;
@@ -61,14 +122,14 @@ body {
 
 .projects-title {
     font-size: 50px;
-    font-family: 'Special Elite', cursive;
+    font-family: "Dela Gothic One", sans-serif;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
 .proj-card {
-    background: linear-gradient(145deg, #6d1a81, #000);
-    border: 3px solid #FF4500;
+    background: linear-gradient(145deg, #918e95, #f9f5f5);
+    border: 3px solid #f5f0f0;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
@@ -78,31 +139,29 @@ body {
 
 .proj-card:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 69, 0, 0.7);
 }
 
 .card-title {
-    font-family: 'Nosifer', cursive;
-    color: #FFA500;
+    font-family: "Fredoka", sans-serif;
+    color: #f5f0f0;
     margin-bottom: 15px;
     text-shadow: 2px 2px 5px #000;
 }
 
 .proj-btn {
-    background-color: #000;
-    color: #FFA500;
+    background-color: #2b2b2b;
+    color: #f5f0f0;
     font-family: 'Creepster', cursive;
     padding: 10px 20px;
     text-decoration: none;
-    border: 2px solid #FFA500;
+    border: 2px solid #f5f0f0;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
 }
 
 .proj-btn:hover {
-    background-color: #FF4500;
+    background-color: #716f6f;
     color: #000;
-    box-shadow: 0 0 15px #FFA500, 0 0 30px #6d1a81;
 }
 
 .container-fluid {
@@ -112,9 +171,7 @@ body {
 }
 
 .footer {
-    background-color: #220629;
-    font-family: 'Creepster', cursive;
-    color: white;
+    font-family: "Fredoka", sans-serif;
     padding: 40px 0;
 }
 
@@ -124,14 +181,11 @@ body {
 }
 
 .footer-icons a {
-    color: white;
     margin: 0 10px;
     font-size: 24px;
-    transition: color 0.3s ease;
 }
 
 .footer-icons a:hover {
-    color: #f39c12;
     transform: scale(1.2);
 }
 
