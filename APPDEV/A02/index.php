@@ -57,7 +57,7 @@ if (isset($_GET['page'])) {
     .profilepic {
       width: 50px;
       height: 50px;
-      border-radius: 100%;
+      border-radius: 50px;
       float: left;
     }
 
@@ -110,7 +110,7 @@ if (isset($_GET['page'])) {
       #followList .profilepic {
         width: 30px;
         height: 30px;
-        border-radius: 50%;
+        border-radius: 50px;
         object-fit: cover;
         display: block;
       }
@@ -150,64 +150,11 @@ if (isset($_GET['page'])) {
         </div>
       </div>
 
-      <div class="col-8 col-sm-8 col-md-8 col-lg-6">
+      <div class="col-10 col-sm-10 col-md-10 col-lg-9">
         <div class="card shadow rounded-5 p-4" style="height: 85vh; max-height: 85vh; overflow-x: hidden;">
           <?php
           include("shared/" . $page . ".php");
           ?>
-        </div>
-      </div>
-
-      <div class="col-2 col-sm-2 col-md-2 col-lg-3">
-        <div class="card shadow rounded-5 p-3" style="height: 85vh; max-height: 85vh; overflow-x: hidden;">
-          <h5 class="sidebar-text">Artists to Follow</h5>
-
-          <button class="sidebar-btn d-lg-none" data-bs-toggle="collapse" data-bs-target="#followList"
-            aria-expanded="false" aria-controls="followList">
-            <i class="bi bi-person-lines-fill"></i>
-          </button>
-
-          <div class="collapse d-lg-block" id="followList">
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/PND.jpg" alt="DJ Cool" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">PARTYNEXTDOOR</div>
-            </div>
-
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/kendrick.jpg" alt="Ella Grace" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">Kendrick Lamar</div>
-            </div>
-
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/frank.jpg" alt="John Doe" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">Frank Ocean</div>
-            </div>
-
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/joji.jpg" alt="John Doe" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">Joji</div>
-            </div>
-
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/roc.jpg" alt="John Doe" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">Rex Orange County</div>
-            </div>
-
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/chris.jpg" alt="John Doe" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">Chris Brown</div>
-            </div>
-
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/daniel.jpg" alt="John Doe" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">Daniel Caesar</div>
-            </div>
-
-            <div class="p-3 m-1 d-flex align-items-center">
-              <img src="img/drake.jpg" alt="John Doe" class="profilepic me-2">
-              <div class="sidebar-text d-none d-lg-block">Drake</div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
