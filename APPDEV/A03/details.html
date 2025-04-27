@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>McDonald's | Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="img/ico.ico" rel="icon" type="image/x-icon">
+    <style>
+        body {
+            background-color: #ffbc0d;
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .menu-category {
+            padding: 40px 0;
+        }
+
+        .menu-card {
+            border: none;
+            transition: transform 0.2s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-image {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .category-title {
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 20px;
+            display: inline-block;
+            padding-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .card-body {
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 5%;
+        }
+
+        @media (max-width: 768px) {
+            .carousel-inner {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .carousel-item {
+                display: block;
+                margin-bottom: 16px;
+                width: 100%;
+                transition: none !important;
+                transform: none !important;
+            }
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light" style="background-color: white;">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="navbar-brand" href="#" style="margin-right: 20px;">
+                <img src="img/logo.png" alt="Logo" width="66" height="55" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Burger -->
+    <div class="container menu-category px-2" id="burger-section">
+        <h2 class="category-title">Burgers</h2>
+        <div id="burgerCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/b1.jpg" class="menu-image card-img-top" alt="Big Mac">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Big Mac</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/b2.jpg" class="menu-image card-img-top" alt="Burger McDo">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Burger McDo</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/b3.jpg" class="menu-image card-img-top" alt="Quarter Pounder">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Quarter Pounder with Cheese</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/b4.jpg" class="menu-image card-img-top" alt="Double Cheeseburger">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Double Cheeseburger</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/b5.jpg" class="menu-image card-img-top" alt="Cheeseburger">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Cheeseburger</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/b6.jpg" class="menu-image card-img-top" alt="McCrispy Chicken Sandwich">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCrispy Chicken Sandwich</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/b6.jpg" class="menu-image card-img-top" alt="McChicken Sandwich">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McChicken Sandwich</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#burgerCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#burgerCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Chicken -->
+    <div class="container menu-category px-2" id="chicken-section">
+        <h2 class="category-title">Chicken & Platters</h2>
+        <div id="chickenCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/c1.jpg" class="menu-image card-img-top" alt="1pc. Chicken McDo with McSpaghetti">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">1pc. Chicken McDo with McSpaghetti</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/c2.jpg" class="menu-image card-img-top" alt="2pc. Chicken McDo with Rice">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">2pc. Chicken McDo with Rice</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/c3.jpg" class="menu-image card-img-top" alt="1pc. Chicken McDo with Rice">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">1pc. Chicken McDo with Rice</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/c4.jpg" class="menu-image card-img-top" alt="6pc. Chicken McNuggets with Fries">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">6pc. Chicken McNuggets with Fries</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/c5.jpg" class="menu-image card-img-top" alt="Crispy Chicken Fillet with Rice">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Crispy Chicken Fillet with Rice</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#chickenCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#chickenCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Drinks -->
+    <div class="container menu-category px-2" id="drinks-section">
+        <h2 class="category-title">Drinks & Desserts</h2>
+        <div id="drinkCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/d1.jpg" class="menu-image card-img-top" alt="Coke">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Coke</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/d2.jpg" class="menu-image card-img-top" alt="Coke Zero">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Coke Zero</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/d3.jpg" class="menu-image card-img-top" alt="Coke McFloat">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Coke McFloat</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/d4.jpg" class="menu-image card-img-top" alt="McFlurry">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McFlurry</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/d5.jpg" class="menu-image card-img-top" alt="Hot Fudge Sundae">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Hot Fudge Sundae</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/d7.jpg" class="menu-image card-img-top" alt="Apple Pie">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">Apple Pie</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#drinkCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#drinkCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- McCafé -->
+    <div class="container menu-category px-2" id="mcCafé-section">
+        <h2 class="category-title">McCafé</h2>
+        <div id="caféCarousel" class="carousel slide">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/mc1.jpeg" class="menu-image card-img-top" alt="McCafé Americano">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCafé Americano</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/mc2.jpeg" class="menu-image card-img-top" alt="McCafé Capuccino">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCafé Capuccino</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/mc3.jpeg" class="menu-image card-img-top" alt="McCafé Espresso">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCafé Espresso</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/mc4.jpeg" class="menu-image card-img-top" alt="McCafé Cafe Latte">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCafé Cafe Latte</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row g-2 mb-2">
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/mc5.jpeg" class="menu-image card-img-top" alt="McCafé Macchiato">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCafé Macchiato</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/mc6.jpeg" class="menu-image card-img-top" alt="McCafé Iced Mocha">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCafé Iced Mocha</h5>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-6 col-lg-3 text-center">
+                            <div class="menu-card">
+                                <img src="img/mc7.jpeg" class="menu-image card-img-top" alt="McCafé Iced Latte">
+                            </div>
+                            <div class="text-center mt-2">
+                                <h5 class="card-title">McCafé Iced Latte</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#caféCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#caféCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Fries -->
+    <div class="container menu-category px-2" id="fries-section">
+        <h2 class="category-title">Fries</h2>
+        <div class="row g-2 mb-2">
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <div class="menu-card">
+                    <img src="img/f1.jpg" class="menu-image card-img-top" alt="Fries">
+                </div>
+                <div class="text-center mt-2">
+                    <h5 class="card-title">Fries</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Breakfast -->
+    <div class="container menu-category px-2" id="breakfast-section">
+        <h2 class="category-title">Breakfast</h2>
+        <div class="row g-2 mb-2">
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <div class="menu-card">
+                    <img src="img/bf2.jpg" class="menu-image card-img-top" alt="Cheesy Eggdesal">
+                </div>
+                <div class="text-center mt-2">
+                    <h5 class="card-title">Cheesy Eggdesal</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <div class="menu-card">
+                    <img src="img/bf1.jpg" class="menu-image card-img-top" alt="Sausage Platter with Rice">
+                </div>
+                <div class="text-center mt-2">
+                    <h5 class="card-title">Sausage Platter with Rice</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <div class="menu-card">
+                    <img src="img/bf3.jpg" class="menu-image card-img-top" alt="Hash Browns">
+                </div>
+                <div class="text-center mt-2">
+                    <h5 class="card-title">Hash Browns</h5>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 text-center">
+                <div class="menu-card">
+                    <img src="img/bf4.jpg" class="menu-image card-img-top" alt="2pc. Hotcakes">
+                </div>
+                <div class="text-center mt-2">
+                    <h5 class="card-title">2pc. Hotcakes</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

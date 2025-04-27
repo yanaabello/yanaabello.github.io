@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>McDonald's | Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="img/ico.ico" rel="icon" type="image/x-icon">
+    <style>
+        body,
+        html {
+            overflow-x: hidden;
+            width: 100%;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .card {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-title {
+            color: white;
+            font-size: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-img-overlay {
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .main-img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-light" style="background-color: white;">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="navbar-brand" href="#" style="margin-right: 20px;">
+                <img src="img/logo.png" alt="Logo" width="66" height="55" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0 m-0">
+        <div class="row">
+            <div class="col-12">
+                <img src="img/main.jpg" alt="Main" class="main-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #ffbc0d;">
+        <div class="row justify-content-center text-center">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-3">
+                <div class="card" style="border-radius: 20px; overflow: hidden;">
+                    <a href="details.html#burger-section" class="text-decoration-none">
+                        <img src="img/b1.jpg" class="card-img" alt="Burgers" style="height: 250px; object-fit: cover;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title fw-bold">Burgers
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-3">
+                <div class="card" style="border-radius: 20px; overflow: hidden;">
+                    <a href="details.html" class="text-decoration-none">
+                        <img src="img/c1.jpg" class="card-img" alt="Chicken & Platters"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title fw-bold">Chicken &
+                                Platters</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-3">
+                <div class="card" style="border-radius: 20px; overflow: hidden;">
+                    <a href="details.html#drinks-section" class="text-decoration-none">
+                        <img src="img/d1.jpg" class="card-img" alt="Drinks & Desserts"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title fw-bold">Drinks &
+                                Desserts</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-3">
+                <div class="card" style="border-radius: 20px; overflow: hidden;">
+                    <a href="details.html#mcCafé-section" class="text-decoration-none">
+                        <img src="img/mc1.jpeg" class="card-img" alt="McCafe" style="height: 250px; object-fit: cover;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title fw-bold">McCafé</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-3">
+                <div class="card" style="border-radius: 20px; overflow: hidden;">
+                    <a href="details.html#fries-section" class="text-decoration-none">
+                        <img src="img/f1.jpg" class="card-img" alt="Fries" style="height: 250px; object-fit: cover;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title fw-bold">Fries</h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 p-3 mb-5">
+                <div class="card" style="border-radius: 20px; overflow: hidden;">
+                    <a href="details.html#breakfast-section" class="text-decoration-none">
+                        <img src="img/bf1.jpg" class="card-img" alt="Breakfast"
+                            style="height: 250px; object-fit: cover;">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title fw-bold">Breakfast
+                            </h5>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
