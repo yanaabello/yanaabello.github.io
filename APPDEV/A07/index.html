@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cosmic Veil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+    <link href="assets/img/ico.ico" rel="icon" type="image/x-icon">
+    <style>
+        body {
+            background-color: #010101;
+            overflow-x: hidden;
+        }
+
+        .topImgContainer {
+            position: relative;
+            width: 100%;
+            max-height: 500px;
+            overflow: hidden;
+        }
+
+        .topImg {
+            object-fit: cover;
+            max-height: 650px;
+            width: 100%;
+            filter: blur(1px) brightness(60%);
+            position: relative;
+            z-index: -1;
+        }
+
+        .topText {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .topText .h1 {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .zodiacText {
+            color: white;
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+
+        .bottomImg {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            filter: blur(1px) brightness(40%);
+        }
+
+        .zodiacHeading {
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-align: center;
+            margin: 30px 0 10px 0;
+            font-size: 28px;
+        }
+
+        @media (min-width: 576px) {
+            .topText .h1 {
+                font-size: 36px;
+            }
+
+            .zodiacHeading {
+                font-size: 36px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .topText .h1 {
+                font-size: 44px;
+            }
+
+            .zodiacHeading {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topImgContainer">
+        <img class="topImg" src="assets/img/topImg.jpg">
+        <div class="topText">
+            <div class="h1">The stars are shifting<br>
+                — and so is your energy.</div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="assets/img/logo2.png" class="img-fluid rounded" style="max-width: 100%; height: auto;">
+            </div>
+
+            <div class="col-md-6">
+                <div class="zodiacText">
+                    <h2 class="fw-bold mb-4" style="font-family: UnifrakturCook, cursive; font-size: 40px;">Your Journey Begins in the Stars</h2>
+                    <p style="font-family: Poppins, sans-serif; font-size: 18px;">
+                        Beyond the night sky lies a map — one that tells your story.
+                        Zodiac signs aren’t just symbols; they’re whispers from the cosmos, inviting you to understand
+                        who you truly are. Step into a world where intuition meets the infinite, and find clarity
+                        through the
+                        constellations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-12">
+                <img src="assets/img/bottomImg.jpg" class="bottomImg">
+            </div>
+        </div>
+
+        <div class="row g-0">
+            <div class="zodiacHeading">
+                Choose your Zodiac Sign
+            </div>
+        </div>
+        
+        <div class="row g-0 my-3">
+            <div class="col-12">
+                <iframe src="https://yanaabello.github.io/APPDEV/A07/embed.html" class="w-100" style="height: 500px; border: none;"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
